@@ -502,11 +502,13 @@
   background-color: #333333;
 }
 .section9 .s9--p1 {
+  max-width: 100%;
   font-size: 14px;
   padding: 38px 0;
   color: white;
   width: 465px;
   margin: auto;
+  max-width: 100%;
 }
 .section9 .s9--a {
   color: #adcce9;
