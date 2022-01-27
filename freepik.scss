@@ -28,6 +28,7 @@
     max-width: 100%;
 
     .section1_item1 {
+      padding-right: 20px;
       max-width: 100%;
       display: flex;
       flex-direction: column;
@@ -360,6 +361,19 @@
     max-width: 100%;
   }
   .s7--item1 {
+    .icon-phone {
+      margin-right: 7px;
+      font-size: 16px;
+      color: white;
+      background-color: #654aff;
+      border-radius: 50%;
+      padding: 6px;
+    }
+    .phone--p {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
     h1 {
       font-size: 40px;
       color: #654aff;
@@ -386,22 +400,62 @@
 }
 .section8 {
   background-color: #654aff;
-  height: 30vh;
+
   h1 {
     color: white;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 6vw;
     text-align: center;
     padding-top: 60px;
     letter-spacing: 6px;
   }
+  .community {
+    margin-top: 2rem;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    .s8--icon {
+      padding: 0 1vw;
+      color: white;
+      font-size: 4vw;
+    }
+  }
 }
-@media screen and(max-width:768px) {
+
+.section9 {
+  text-align: center;
+  .s9--p1 {
+    font-size: 14px;
+    padding: 38px 0;
+    color: white;
+    width: 465px;
+    margin: auto;
+  }
+  .s9--a {
+    color: #adcce9;
+  }
+  .s9--p2 {
+    padding: 50px 0;
+    font-size: 14px;
+    color: white;
+  }
+  background-color: #333333;
+}
+
+@media screen and(max-width:767px) {
   .section1 {
     flex-direction: column;
   }
   .section1_item1 {
-    width: 430px !important;
+    max-width: 90% !important;
+  }
+  .section2 {
+    h2 {
+      font-size: 2.75rem;
+    }
+    p {
+      padding: 0 10%;
+    }
   }
   .s3_item2 {
     margin: auto;
@@ -415,19 +469,21 @@
   }
   .section4 {
     h2 {
-      font-size: 2.75rem;
+      font-size: 1.75rem;
       margin: auto;
       width: 70%;
     }
     p {
       line-height: 2rem;
-      font-size: 18px;
+      font-size: 14px;
       width: 70%;
       margin: 10px auto;
     }
     .section4_item {
       padding: 15px !important;
       p {
+        font-size: 0.5rem !important;
+        line-height: 10px !important;
         width: 95%;
       }
     }
@@ -473,7 +529,7 @@
     }
     .s7--item2 {
       h1 {
-        font-size: 40px;
+        font-size: 9vw;
       }
     }
   }
