@@ -23,6 +23,7 @@
 }
 
 .banner {
+  padding-left: 10px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -67,7 +68,7 @@
 .banner .section1 .section1_item1 h1 {
   line-height: 80px;
   font-weight: unset;
-  color: blue;
+  color: #654aff;
   font-size: 3.5rem;
 }
 .banner .section1 .section1_item1 p {
@@ -508,7 +509,7 @@
   color: white;
   width: 465px;
   margin: auto;
-  max-width: 100%;
+  max-width: 95%;
 }
 .section9 .s9--a {
   color: #adcce9;
@@ -520,32 +521,34 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section1 {
+  .banner {
+    padding-left: 0px;
+  }
+  .banner .section1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-
-  .section1_item1 {
+  .banner .section1_item1 {
     max-width: 90% !important;
   }
 
   .section2 h2 {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   .section2 p {
     padding: 0 10%;
   }
 
-  .s3_item2 {
+  .section3 .s3_item2 {
     margin: auto;
     padding-top: 40px;
   }
-  .s3_item2 h3 {
+  .section3 .s3_item2 h3 {
     font-size: 40px !important;
   }
-  .s3_item2 .s3-circle p {
+  .section3 .s3_item2 .s3-circle p {
     width: 280px !important;
   }
 
@@ -564,8 +567,8 @@
     padding: 15px !important;
   }
   .section4 .section4_item p {
-    font-size: 0.5rem !important;
-    line-height: 10px !important;
+    font-size: 0.75rem !important;
+    line-height: 15px !important;
     width: 95%;
   }
 
@@ -621,5 +624,14 @@
   }
   .section7 .s7--item2 h1 {
     font-size: 9vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    padding-left: 5%;
+  }
+
+  .section6 {
+    height: 60vh;
   }
 }

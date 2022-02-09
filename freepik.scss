@@ -17,6 +17,7 @@
 }
 
 .banner {
+  padding-left: 10px;
   justify-content: flex-end;
   display: flex;
   .section1 {
@@ -43,7 +44,7 @@
       h1 {
         line-height: 80px;
         font-weight: unset;
-        color: blue;
+        color: #654aff;
         font-size: 3.5rem;
       }
       p {
@@ -103,7 +104,7 @@
       width: 340px;
       background-color: white;
 
-      border-radius: 26px;
+      border-radius: 20px;
       h3 {
         color: #654aff;
       }
@@ -146,6 +147,7 @@
   justify-content: space-evenly;
   display: flex;
   .s3_item1 {
+    padding-bottom: 20px;
     img {
       max-width: 100%;
       width: 30rem;
@@ -431,7 +433,7 @@
     color: white;
     width: 465px;
     margin: auto;
-    max-width: 100%;
+    max-width: 95%;
   }
   .s9--a {
     color: #adcce9;
@@ -445,28 +447,33 @@
 }
 
 @media screen and(max-width:767px) {
-  .section1 {
-    flex-direction: column;
-  }
-  .section1_item1 {
-    max-width: 90% !important;
+  .banner {
+    padding-left: 0px;
+    .section1 {
+      flex-direction: column;
+    }
+    .section1_item1 {
+      max-width: 90% !important;
+    }
   }
   .section2 {
     h2 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
     }
     p {
       padding: 0 10%;
     }
   }
-  .s3_item2 {
-    margin: auto;
-    padding-top: 40px;
-    h3 {
-      font-size: 40px !important;
-    }
-    .s3-circle p {
-      width: 280px !important;
+  .section3 {
+    .s3_item2 {
+      margin: auto;
+      padding-top: 40px;
+      h3 {
+        font-size: 40px !important;
+      }
+      .s3-circle p {
+        width: 280px !important;
+      }
     }
   }
   .section4 {
@@ -484,8 +491,8 @@
     .section4_item {
       padding: 15px !important;
       p {
-        font-size: 0.5rem !important;
-        line-height: 10px !important;
+        font-size: 0.75rem !important;
+        line-height: 15px !important;
         width: 95%;
       }
     }
@@ -534,5 +541,13 @@
         font-size: 9vw;
       }
     }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner {
+    padding-left: 5%;
+  }
+  .section6 {
+    height: 60vh;
   }
 }
